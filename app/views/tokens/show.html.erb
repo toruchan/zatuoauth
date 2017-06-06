@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @token.user_id %>
+</p>
+
+<p>
+  <strong>Access token:</strong>
+  <%= @token.access_token %>
+</p>
+
+<p>
+  <strong>Refresh token:</strong>
+  <%= @token.refresh_token %>
+</p>
+
+<p>
+  <strong>Expire access token:</strong>
+  <%= @token.expire_access_token %>
+</p>
+
+<p>
+  <strong>Expire refresh token:</strong>
+  <%= @token.expire_refresh_token %>
+</p>
+
+<%= link_to 'Edit', edit_token_path(@token) %> |
+<%= link_to 'Back', tokens_path %>

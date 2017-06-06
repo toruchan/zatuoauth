@@ -1,0 +1,42 @@
+<%= form_for(token) do |f| %>
+  <% if token.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(token.errors.count, "error") %> prohibited this token from being saved:</h2>
+
+      <ul>
+      <% token.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :access_token %>
+    <%= f.text_field :access_token %>
+  </div>
+
+  <div class="field">
+    <%= f.label :refresh_token %>
+    <%= f.text_field :refresh_token %>
+  </div>
+
+  <div class="field">
+    <%= f.label :expire_access_token %>
+    <%= f.datetime_select :expire_access_token %>
+  </div>
+
+  <div class="field">
+    <%= f.label :expire_refresh_token %>
+    <%= f.datetime_select :expire_refresh_token %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

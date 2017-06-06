@@ -1,0 +1,6 @@
+<%= form_tag "/token/", method: :post do %>
+<%= hidden_field_tag "client_id","hoge"%>
+<%= hidden_field_tag "grant_type","hono"%>
+<%= hidden_field_tag "auth_code","auth_code"%>
+<%= button_tag do %><span>POSTで送る</span><% end %>
+<% end %>

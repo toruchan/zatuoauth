@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  oauth_code: MyString
+  expire_oauth_code: 2017-06-05 13:32:03
+
+two:
+  user_id: MyString
+  oauth_code: MyString
+  expire_oauth_code: 2017-06-05 13:32:03
